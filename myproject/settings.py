@@ -16,10 +16,12 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "dev-secret-key")
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
 ALLOWED_HOSTS = [
-    ".vercel.app",  # Vercel domain
+    ".vercel.app",                # Vercel domain
+    ".onrender.com",              # Render domain
     "localhost",
     "127.0.0.1",
 ]
+
 
 # Application definition
 INSTALLED_APPS = [
